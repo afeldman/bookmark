@@ -33,8 +33,9 @@ def deep_search(tags):
   if 'children' in tag:
    tags = tag['children']
    deep_search(tags)
-  print(tag)
-
+  else:
+   add_bookmark(tag)
+   
 for file in file_list: 
  f = open(file,'r')
  con = json.load(f)
