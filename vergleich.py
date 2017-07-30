@@ -29,9 +29,12 @@ def add_bookmark(tag):
  bookmark_s.add(bk)
  
 def deep_search(tags):
-
+ #go trough all the tags
  for tag in tags:
-  print (tag)
+  #if tag has children
+  if tag.has_key('children'):
+   print (tag)
+  
 # if tags.has_key('children'):
 #  tag = tags['children']
 #  stack.push(tag)
