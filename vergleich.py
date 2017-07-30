@@ -16,8 +16,6 @@ file_list = [join(file_path,f) for f in listdir(file_path) if isfile(join(file_p
 
 bookmark_s = set()
 
-stack = Stack()
-
 def add_bookmark(tag):
 # tag['type'] == 'url':
  uri = tag['url']
@@ -31,20 +29,11 @@ def add_bookmark(tag):
 def deep_search(tags):
  #go trough all the tags
  for tag in tags:
-  #if tag has children
-  if tag.has_key('children'):
-   print (tag)
-  
-# if tags.has_key('children'):
-#  tag = tags['children']
-#  stack.push(tag)
-  
-#  for tag in tags:
-#   deep_search(tag)
-  
-  #if tag['type'] == 'folder':
-  # pass  
- 
+  #if tag has children and call 
+  if 'children' in tag:
+   tags = tag['children']
+   deep_search(tags)
+  print(tag)
 
 for file in file_list: 
  f = open(file,'r')
