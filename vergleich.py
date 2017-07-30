@@ -15,6 +15,10 @@ file_path = abspath(sys.argv[1])
 file_list = [join(file_path,f) for f in listdir(file_path) if isfile(join(file_path, f))]
 
 bookmark_s = set()
+def encode_Bookmark(obj):
+    if isinstance(obj, Bookmark):
+        return obj.__dict__
+    return obj
 
 def add_bookmark(tag):
 # tag['type'] == 'url':
@@ -51,3 +55,11 @@ for file in file_list:
 
  deep_search(tags)
 
+print(len(bookmark_s))
+
+l_bookmarks = list(bookmark_s)
+
+bookmark_j = json.dumps(l_bookmarks, default=encode_Bookmark)
+
+with open('bookmark.json', 'w') as f:
+ json.dump(bookmark_j, f)
