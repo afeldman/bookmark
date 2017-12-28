@@ -1,0 +1,255 @@
+{
+   "checksum": "6bf11e6ee528f630d6220bc1f57926c9",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13152155279706291",
+            "id": "30",
+            "meta_info": {
+               "last_visited_desktop": "13152155279709427"
+            },
+            "name": "git - Der einfache Einstieg - kein Schnick-schnack!",
+            "type": "url",
+            "url": "https://rogerdudler.github.io/git-guide/index.de.html"
+         }, {
+            "date_added": "13152354197639737",
+            "id": "41",
+            "meta_info": {
+               "last_visited_desktop": "13152354197639900"
+            },
+            "name": "(41) Deep House & Chill Music • 24/7 Live Stream - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=MF0krGqIQj0"
+         }, {
+            "date_added": "13152324445908321",
+            "id": "38",
+            "meta_info": {
+               "last_visited_desktop": "13152340749020903"
+            },
+            "name": "RESTful API - MATLAB & Simulink - MathWorks Deutschland",
+            "type": "url",
+            "url": "https://de.mathworks.com/help/mps/restfuljson/restful-api.html"
+         }, {
+            "date_added": "13152258788300594",
+            "id": "35",
+            "meta_info": {
+               "last_visited_desktop": "13152323048290797"
+            },
+            "name": "Download Data from Web Service - MATLAB & Simulink - MathWorks Deutschland",
+            "type": "url",
+            "url": "https://de.mathworks.com/help/matlab/import_export/download-data-from-web-service.html"
+         }, {
+            "date_added": "13152251477579605",
+            "id": "34",
+            "meta_info": {
+               "last_visited_desktop": "13152337278058235"
+            },
+            "name": "GitHub - gavanderhoorn/fanuc_ros_cgio: A simple CGI-like interface to the IO ports on Fanuc robot controllers",
+            "type": "url",
+            "url": "https://github.com/gavanderhoorn/fanuc_ros_cgio"
+         }, {
+            "date_added": "13152251473187029",
+            "id": "33",
+            "meta_info": {
+               "last_visited_desktop": "13152342958398206"
+            },
+            "name": "GitHub - ABC-iRobotics/fanuc-webcontrol: Simple software to control Fanuc robots through browser.",
+            "type": "url",
+            "url": "https://github.com/ABC-iRobotics/fanuc-webcontrol"
+         }, {
+            "date_added": "13152078846485612",
+            "id": "27",
+            "meta_info": {
+               "last_visited_desktop": "13152325971344679"
+            },
+            "name": "Clang-Tidy — Extra Clang Tools 6 documentation",
+            "type": "url",
+            "url": "http://clang.llvm.org/extra/clang-tidy/"
+         }, {
+            "date_added": "13152067644594991",
+            "id": "15",
+            "meta_info": {
+               "last_visited_desktop": "13152067644596293"
+            },
+            "name": "CONTENTS",
+            "type": "url",
+            "url": "http://pubs.opengroup.org/onlinepubs/008329799/toc.htm"
+         }, {
+            "date_added": "13152078805225655",
+            "id": "26",
+            "meta_info": {
+               "last_visited_desktop": "13152078805229725"
+            },
+            "name": "GitHub - mre/awesome-static-analysis: A curated list of static analysis tools, linters and code quality checkers for various programming languages",
+            "type": "url",
+            "url": "https://github.com/mre/awesome-static-analysis"
+         }, {
+            "date_added": "13152076895591483",
+            "id": "25",
+            "meta_info": {
+               "last_visited_desktop": "13152076895594206"
+            },
+            "name": "Franka Control Interface Documentation — Franka Control Interface (FCI) 0.1.0 documentation",
+            "type": "url",
+            "url": "https://frankaemika.github.io/docs/"
+         }, {
+            "date_added": "13152076891119897",
+            "id": "24",
+            "meta_info": {
+               "last_visited_desktop": "13152076891122080"
+            },
+            "name": "GitHub - frankaemika/libfranka: C++ library for Franka Emika research robots",
+            "type": "url",
+            "url": "https://github.com/frankaemika/libfranka"
+         }, {
+            "date_added": "13152076305452527",
+            "id": "23",
+            "meta_info": {
+               "last_visited_desktop": "13152076305453084"
+            },
+            "name": "Die Pforten zur Linux-Maschine: Pluggable Authe... » Linux-Magazin",
+            "type": "url",
+            "url": "http://www.linux-magazin.de/Ausgaben/2004/05/Hereinspaziert"
+         }, {
+            "date_added": "13152076246528952",
+            "id": "22",
+            "meta_info": {
+               "last_visited_desktop": "13152076246529757"
+            },
+            "name": "Smart Card Types",
+            "type": "url",
+            "url": "http://www.smartcardbasics.com/smart-card-types.html"
+         }, {
+            "date_added": "13152067654666472",
+            "id": "19",
+            "meta_info": {
+               "last_visited_desktop": "13152067654668477"
+            },
+            "name": "https://raw.githubusercontent.com/OpenSC/pam_pkcs11/master/TODO",
+            "type": "url",
+            "url": "https://raw.githubusercontent.com/OpenSC/pam_pkcs11/master/TODO"
+         }, {
+            "date_added": "13152067652746570",
+            "id": "18",
+            "meta_info": {
+               "last_visited_desktop": "13152067652748710"
+            },
+            "name": "PAM-PKCS11 Mappers API",
+            "type": "url",
+            "url": "http://opensc.github.io/pam_pkcs11/doc/mappers_api.html"
+         }, {
+            "date_added": "13152067649746875",
+            "id": "17",
+            "meta_info": {
+               "last_visited_desktop": "13152067649749195"
+            },
+            "name": "pam_pkcs11/card_eventmgr.c at master · OpenSC/pam_pkcs11 · GitHub",
+            "type": "url",
+            "url": "https://github.com/OpenSC/pam_pkcs11/blob/master/src/tools/card_eventmgr.c"
+         }, {
+            "date_added": "13152067647250823",
+            "id": "16",
+            "meta_info": {
+               "last_visited_desktop": "13152067647252866"
+            },
+            "name": "Linux smart card authentication – PAM | Firas Kraïem",
+            "type": "url",
+            "url": "http://blog.fkraiem.org/2013/03/13/linux-smart-card-authentication-pam/"
+         }, {
+            "date_added": "13152067641755207",
+            "id": "14",
+            "meta_info": {
+               "last_visited_desktop": "13152067641756686"
+            },
+            "name": "A Linux-PAM page",
+            "type": "url",
+            "url": "http://www.linux-pam.org/"
+         }, {
+            "date_added": "13152067369432756",
+            "id": "6",
+            "meta_info": {
+               "last_visited_desktop": "13152067369434215"
+            },
+            "name": "libpam-pkcs11",
+            "type": "url",
+            "url": "http://www.informatik.uni-halle.de/ti/forschung/it_sicherheit/sso/libpam-pkcs11/"
+         }, {
+            "date_added": "13152067639123736",
+            "id": "13",
+            "meta_info": {
+               "last_visited_desktop": "13152076023145933"
+            },
+            "name": "Pluggable Authentication Modules – Wikipedia",
+            "type": "url",
+            "url": "https://de.wikipedia.org/wiki/Pluggable_Authentication_Modules"
+         }, {
+            "date_added": "13152067636483517",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13152067636484829"
+            },
+            "name": "Grundlagen",
+            "type": "url",
+            "url": "http://www.fh-wedel.de/~si/seminare/ws99/Ausarbeitung/secure/secure2.html#passwoerter"
+         }, {
+            "date_added": "13152067633955219",
+            "id": "11",
+            "meta_info": {
+               "last_visited_desktop": "13152067633956192"
+            },
+            "name": "Pluggable Authentication Modules",
+            "type": "url",
+            "url": "https://www.freebsd.org/doc/en_US.ISO8859-1/articles/pam/index.html"
+         }, {
+            "date_added": "13152067597631431",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13152067597634175"
+            },
+            "name": "PAM - LinuxWiki.org - Linux Wiki und Freie Software",
+            "type": "url",
+            "url": "http://linuxwiki.de/PAM"
+         }, {
+            "date_added": "13152067427251170",
+            "id": "9",
+            "meta_info": {
+               "last_visited_desktop": "13152067451468437"
+            },
+            "name": "GitHub - OpenSC/pam_pkcs11: This Linux-PAM login module allows a X.509 certificate based user login",
+            "type": "url",
+            "url": "https://github.com/OpenSC/pam_pkcs11"
+         }, {
+            "date_added": "13152067410998350",
+            "id": "8",
+            "meta_info": {
+               "last_visited_desktop": "13152067411000242"
+            },
+            "name": "Home · OpenSC/pam_pkcs11 Wiki · GitHub",
+            "type": "url",
+            "url": "https://github.com/OpenSC/pam_pkcs11/wiki"
+         } ],
+         "date_added": "13152064671425022",
+         "date_modified": "13152354197639737",
+         "id": "1",
+         "name": "Lesezeichenleiste",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13152064671425027",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Weitere Lesezeichen",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13152064671425029",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Lesezeichen",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

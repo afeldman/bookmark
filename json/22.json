@@ -1,0 +1,434 @@
+{
+   "checksum": "0479d7f2988c692fce233a52074af676",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13141895873000000",
+            "id": "6",
+            "name": "Getting Started",
+            "type": "url",
+            "url": "https://www.mozilla.org/en-US/firefox/central/"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13141895873000000",
+                  "id": "9",
+                  "name": "Ubuntu",
+                  "type": "url",
+                  "url": "http://www.ubuntu.com/"
+               }, {
+                  "date_added": "13141895873000000",
+                  "id": "10",
+                  "name": "Ubuntu Wiki (community-edited website)",
+                  "type": "url",
+                  "url": "http://wiki.ubuntu.com/"
+               }, {
+                  "date_added": "13141895873000000",
+                  "id": "11",
+                  "name": "Make a Support Request to the Ubuntu Community",
+                  "type": "url",
+                  "url": "https://answers.launchpad.net/ubuntu/+addquestion"
+               }, {
+                  "date_added": "13141895873000000",
+                  "id": "12",
+                  "name": "Debian (Ubuntu is based on Debian)",
+                  "type": "url",
+                  "url": "http://www.debian.org/"
+               } ],
+               "date_added": "13141905884632558",
+               "date_modified": "0",
+               "id": "8",
+               "name": "Ubuntu and Free Software links",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13141895873000000",
+                  "id": "14",
+                  "name": "Help and Tutorials",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/firefox/help/"
+               }, {
+                  "date_added": "13141895873000000",
+                  "id": "15",
+                  "name": "Customize Firefox",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/firefox/customize/"
+               }, {
+                  "date_added": "13141895873000000",
+                  "id": "16",
+                  "name": "Get Involved",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/contribute/"
+               }, {
+                  "date_added": "13141895873000000",
+                  "id": "17",
+                  "name": "About Us",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/about/"
+               } ],
+               "date_added": "13141905884632971",
+               "date_modified": "0",
+               "id": "13",
+               "name": "Mozilla Firefox",
+               "type": "folder"
+            } ],
+            "date_added": "13141905884632156",
+            "date_modified": "13141905884632157",
+            "id": "7",
+            "name": "Imported From Firefox",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13142060904609772",
+               "id": "27",
+               "meta_info": {
+                  "last_visited_desktop": "13142060904610465"
+               },
+               "name": "Zorin OS - Your Computer. Better.",
+               "type": "url",
+               "url": "https://zorinos.com/"
+            }, {
+               "date_added": "13142061192174711",
+               "id": "29",
+               "meta_info": {
+                  "last_visited_desktop": "13142061925176661"
+               },
+               "name": "Parrot Project",
+               "type": "url",
+               "url": "https://www.parrotsec.org/"
+            }, {
+               "date_added": "13142061550626752",
+               "id": "32",
+               "meta_info": {
+                  "last_visited_desktop": "13142061550626918"
+               },
+               "name": "Arch Linux ARM",
+               "type": "url",
+               "url": "https://archlinuxarm.org/"
+            }, {
+               "date_added": "13142061563834995",
+               "id": "33",
+               "meta_info": {
+                  "last_visited_desktop": "13142061563835167"
+               },
+               "name": "A fast and open replacement for Windows and macOS ⋅ elementary OS",
+               "type": "url",
+               "url": "https://elementary.io/"
+            }, {
+               "date_added": "13142061579491414",
+               "id": "34",
+               "meta_info": {
+                  "last_visited_desktop": "13142061579491556"
+               },
+               "name": "lubuntu | lightweight, fast, easier",
+               "type": "url",
+               "url": "http://lubuntu.net/"
+            }, {
+               "date_added": "13142061616387718",
+               "id": "35",
+               "meta_info": {
+                  "last_visited_desktop": "13142061616387876"
+               },
+               "name": "Tails - Privacy for anyone anywhere",
+               "type": "url",
+               "url": "https://tails.boum.org/"
+            }, {
+               "date_added": "13142061664940321",
+               "id": "36",
+               "meta_info": {
+                  "last_visited_desktop": "13142061664940455"
+               },
+               "name": "Arch Linux",
+               "type": "url",
+               "url": "https://www.archlinux.org/"
+            }, {
+               "date_added": "13142061951119771",
+               "id": "40",
+               "meta_info": {
+                  "last_visited_desktop": "13142061951119925"
+               },
+               "name": "Core | Developer",
+               "type": "url",
+               "url": "https://developer.ubuntu.com/core"
+            }, {
+               "date_added": "13142062025249397",
+               "id": "41",
+               "meta_info": {
+                  "last_visited_desktop": "13142062025249590"
+               },
+               "name": "Revive that old PC! \u003C The LXLE Desktop",
+               "type": "url",
+               "url": "http://www.lxle.net/"
+            }, {
+               "date_added": "13142062301290546",
+               "id": "42",
+               "meta_info": {
+                  "last_visited_desktop": "13142062301290677"
+               },
+               "name": "GNU/Linux Distribution Timeline",
+               "type": "url",
+               "url": "http://futurist.se/gldt/"
+            }, {
+               "date_added": "13142062612971922",
+               "id": "45",
+               "meta_info": {
+                  "last_visited_desktop": "13142062612972497"
+               },
+               "name": "Qubes OS: A reasonably secure operating system",
+               "type": "url",
+               "url": "https://www.qubes-os.org/"
+            }, {
+               "date_added": "13142062706713973",
+               "id": "46",
+               "meta_info": {
+                  "last_visited_desktop": "13142062706714135"
+               },
+               "name": "Ubuntu MATE | For a retrospective future",
+               "type": "url",
+               "url": "https://ubuntu-mate.org/"
+            }, {
+               "date_added": "13142062749108324",
+               "id": "47",
+               "meta_info": {
+                  "last_visited_desktop": "13142062749108459"
+               },
+               "name": "Welcome – Gentoo Linux",
+               "type": "url",
+               "url": "https://gentoo.org/"
+            }, {
+               "date_added": "13142062985288110",
+               "id": "50",
+               "meta_info": {
+                  "last_visited_desktop": "13142062985288240"
+               },
+               "name": "tinhat.sourceforge.net",
+               "type": "url",
+               "url": "http://tinhat.sourceforge.net/"
+            } ],
+            "date_added": "13142061176495864",
+            "date_modified": "13142063211660542",
+            "id": "28",
+            "name": "linux",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13142059694870845",
+               "id": "25",
+               "meta_info": {
+                  "last_visited_desktop": "13142060686027895"
+               },
+               "name": "awesomeに引っ越した - tanittaの日記",
+               "type": "url",
+               "url": "http://tanitta.hatenablog.com/entry/2014/11/25/010006"
+            }, {
+               "date_added": "13142052802526159",
+               "id": "21",
+               "meta_info": {
+                  "last_visited_desktop": "13142060684443091"
+               },
+               "name": "Setup CNTK on Linux | Microsoft Docs",
+               "type": "url",
+               "url": "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-Linux"
+            }, {
+               "date_added": "13142054003612006",
+               "id": "22",
+               "meta_info": {
+                  "last_visited_desktop": "13142311554488230"
+               },
+               "name": "Installing TensorFlow  |  TensorFlow",
+               "type": "url",
+               "url": "https://www.tensorflow.org/install/"
+            }, {
+               "date_added": "13142061690956566",
+               "id": "37",
+               "meta_info": {
+                  "last_visited_desktop": "13142061690956754"
+               },
+               "name": "The Xen Project, the powerful open source industry standard for virtualization.",
+               "type": "url",
+               "url": "https://www.xenproject.org/"
+            }, {
+               "date_added": "13142060681478743",
+               "id": "26",
+               "meta_info": {
+                  "last_visited_desktop": "13142060681479608"
+               },
+               "name": "Install MongoDB Community Edition on Ubuntu — MongoDB Manual 3.4",
+               "type": "url",
+               "url": "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/"
+            }, {
+               "date_added": "13141907768488349",
+               "id": "18",
+               "meta_info": {
+                  "last_visited_desktop": "13141907768489340"
+               },
+               "name": "Installation Guide Linux :: CUDA Toolkit Documentation",
+               "type": "url",
+               "url": "http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions"
+            }, {
+               "date_added": "13142062819960395",
+               "id": "49",
+               "meta_info": {
+                  "last_visited_desktop": "13142062819960538"
+               },
+               "name": "Tor Project: Anonymity Online",
+               "type": "url",
+               "url": "https://www.torproject.org/"
+            }, {
+               "date_added": "13142062793951101",
+               "id": "48",
+               "meta_info": {
+                  "last_visited_desktop": "13142062793951256"
+               },
+               "name": "Whonix",
+               "type": "url",
+               "url": "https://www.whonix.org/"
+            } ],
+            "date_added": "13142061711279183",
+            "date_modified": "13142062823080831",
+            "id": "38",
+            "name": "projects",
+            "type": "folder"
+         }, {
+            "date_added": "13142321095880377",
+            "id": "67",
+            "meta_info": {
+               "last_visited_desktop": "13142321095881841"
+            },
+            "name": "Google 翻訳",
+            "type": "url",
+            "url": "https://translate.google.co.jp/m/translate?hl=ja"
+         }, {
+            "date_added": "13142320310849365",
+            "id": "66",
+            "meta_info": {
+               "last_visited_desktop": "13142320310850299"
+            },
+            "name": "Urban Sound Classification with Neural Networks in Tensorflow",
+            "type": "url",
+            "url": "http://www.kdnuggets.com/2016/09/urban-sound-classification-neural-networks-tensorflow.html"
+         }, {
+            "date_added": "13142320152454900",
+            "id": "65",
+            "meta_info": {
+               "last_visited_desktop": "13142320152455888"
+            },
+            "name": "Analyzing Six Deep Learning Tools for Music Generation - The Asimov Institute",
+            "type": "url",
+            "url": "http://www.asimovinstitute.org/analyzing-deep-learning-tools-music/"
+         }, {
+            "date_added": "13142319981628161",
+            "id": "64",
+            "meta_info": {
+               "last_visited_desktop": "13142319981629181"
+            },
+            "name": "Implementing a CNN for Text Classification in TensorFlow – WildML",
+            "type": "url",
+            "url": "http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/"
+         }, {
+            "date_added": "13142319870818690",
+            "id": "63",
+            "meta_info": {
+               "last_visited_desktop": "13142319870819675"
+            },
+            "name": "Understanding Convolutional Neural Networks for NLP – WildML",
+            "type": "url",
+            "url": "http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/"
+         }, {
+            "date_added": "13142313752467538",
+            "id": "60",
+            "meta_info": {
+               "last_visited_desktop": "13142313752468491"
+            },
+            "name": "Free ebooks by Project Gutenberg - Gutenberg",
+            "type": "url",
+            "url": "https://www.gutenberg.org/"
+         }, {
+            "date_added": "13142318153729722",
+            "id": "62",
+            "meta_info": {
+               "last_visited_desktop": "13142318153731043"
+            },
+            "name": "Free stock videos – Pexels Videos",
+            "type": "url",
+            "url": "https://videos.pexels.com/"
+         }, {
+            "date_added": "13142314176468373",
+            "id": "61",
+            "meta_info": {
+               "last_visited_desktop": "13142321095881841"
+            },
+            "name": "Google 翻訳",
+            "type": "url",
+            "url": "https://translate.google.co.jp/m/translate?hl=ja"
+         }, {
+            "date_added": "13142063962950553",
+            "id": "53",
+            "meta_info": {
+               "last_visited_desktop": "13142063962951379"
+            },
+            "name": "How to Write AWK Commands and Scripts",
+            "type": "url",
+            "url": "https://www.lifewire.com/write-awk-commands-and-scripts-2200573"
+         }, {
+            "date_added": "13142309444376114",
+            "id": "59",
+            "meta_info": {
+               "last_visited_desktop": "13142309514893306"
+            },
+            "name": "Chainer Cifar - codegists.com",
+            "type": "url",
+            "url": "http://codegists.com/code/chainer%20cifar/"
+         }, {
+            "date_added": "13142309325887362",
+            "id": "58",
+            "meta_info": {
+               "last_visited_desktop": "13142309325888738"
+            },
+            "name": "Deep Learning",
+            "type": "url",
+            "url": "http://www.deeplearningbook.org/"
+         }, {
+            "date_added": "13142308144967310",
+            "id": "57",
+            "meta_info": {
+               "last_visited_desktop": "13142308144969069"
+            },
+            "name": "Chainer: ビギナー向けチュートリアル Vol.1 - Qiita",
+            "type": "url",
+            "url": "http://qiita.com/mitmul/items/eccf4e0a84cb784ba84a#6-trainer%E3%81%ABextension%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B"
+         }, {
+            "date_added": "13142308099942489",
+            "id": "56",
+            "meta_info": {
+               "last_visited_desktop": "13142308099943311"
+            },
+            "name": "Deep Learning",
+            "type": "url",
+            "url": "http://sinhrks.hatenablog.com/category/Deep%20Learning"
+         } ],
+         "date_added": "13141899234555621",
+         "date_modified": "13142321095880377",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13141899234555627",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13141899234555628",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
