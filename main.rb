@@ -27,14 +27,11 @@ if $0 == __FILE__
       root.select { | k,v |
          traverse(v)
       } if root
-	puts "size of bookmarks:\t#{$bookmarks.length}"
    }
 
-   $bookmarks.uniq { |elem| elem['url'] }
+   data = $bookmarks.uniq { |elem| elem['url'] }
 
-	puts "size of bookmarks:\t#{$bookmarks.length}"
+   puts "size of bookmarks:\t#{data.length}"
 
-	k = $bookmarks.to_yaml
-	p k
-	File.open('./bookmark.yml', 'w') {|f| f.write k }
+   File.open('./bookmark.yml', 'w') {|f| f.write data.to_yaml }
 end
