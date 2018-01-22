@@ -40,7 +40,9 @@ module Gmark
     res = req.request_head(path || '/')
     res.code != "404" # false if returns 404 - not found
   rescue Errno::ENOENT
-    false # false if can't find the server    
+    false # false if can't find the server
+  rescue Errno::ECONNREFUSED
+    false
   end
   
   class BookmarkHTMLParser
