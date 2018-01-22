@@ -5,11 +5,6 @@ require 'date'
 
 module Gmark
 
-  USER_MODE = {
-    :PRIVAT => 0,
-    :PUBLIC => 1
-  }
-  
   class Node
     attr_accessor :counter, :uuid,
                   :number, :mode,
