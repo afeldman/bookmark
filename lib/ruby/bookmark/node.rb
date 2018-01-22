@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
 
+
+require_relative 'user'
+
 require 'securerandom'
 require 'date'
 
 module Gmark
-
   class Node
     attr_accessor :counter, :uuid,
                   :number, :mode,
@@ -23,11 +25,11 @@ module Gmark
     @change_time = nil
     @name = ''
 
-    def initialize(name, user, mode=USER_MODE[:PRIVATE])
+    def initialize(name)
       @uuid = SecureRandom.uuid
       @number = @@counter
-      @mode = mode
-      @user = user
+      @mode = USER_MODE[:PUBLIC]
+      @user = 'anonym'
       @access_time = DateTime.now.strftime('%s')
       @modification_time = DateTime.now.strftime('%s')
       @change_time = DateTime.now.strftime('%s')
@@ -39,6 +41,6 @@ module Gmark
 end
 
 if $0 == __FILE__
-  n = Gmark::Node.new('test','user1', 1)
+  n = Gmark::Node.new('test')
   p n
 end

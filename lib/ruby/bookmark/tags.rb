@@ -9,8 +9,8 @@ module Gmark
     @parent_tag = nil
     @client_tag = []
 
-    def initialize(name, user, parent_node, mode=USER_MODE[:PRIVATE])
-      super(name, user, mode)
+    def initialize(name, parent_node)
+      super(name)
       @parent_tag = parent_node
     end
     
@@ -18,6 +18,6 @@ module Gmark
 end
 
 if $0 == __FILE__
-  n = Gmark::Tag.new('test','user1', nil, 1)
+  n = Gmark::Tag.new('test', nil)
   p n
 end

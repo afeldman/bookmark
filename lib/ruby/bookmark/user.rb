@@ -7,7 +7,6 @@ module Gmark
     :PUBLIC => 1
   }
   
-  
   class User
     attr_accessor :id, :email
     

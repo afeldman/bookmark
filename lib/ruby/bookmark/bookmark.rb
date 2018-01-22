@@ -9,8 +9,8 @@ module Gmark
     @parent_tag = nil
     @tags= [] #links
 
-    def initialize(url, name, user, parent_node, mode=USER_MODE[:PRIVATE])
-      super(name, user, mode)
+    def initialize(url, name, parent_node)
+      super(name)
       @url = url
       @parent_tag = parent_node
     end
@@ -18,6 +18,6 @@ module Gmark
 end
 
 if $0 == __FILE__
-  n = Gmark::Bookmark.new('testurl', 'test', 'user1', nil, 1)
+  n = Gmark::Bookmark.new('testurl', 'test', nil)
   p n
 end
