@@ -1,41 +1,36 @@
 #!/usr/bin/env ruby
 
-
 require_relative 'user'
 
+require 'digest'
 require 'securerandom'
 require 'date'
 
 module Gmark
   class Node
-    attr_accessor :counter, :uuid,
+    attr_accessor :uuid, :index,
                   :number, :mode,
                   :user, :access_time,
                   :change_time, :modification_time,
                   :name
 
-    @@counter = 0
-    
-    @id = nil
-    @numer = -1
-    @mode = nil
-    @user = nil
-    @access_time = nil
-    @modification_time = nil
-    @change_time = nil
-    @name = ''
-
     def initialize(name)
       @id = SecureRandom.uuid
-      @number = @@counter
+      @index = Digest::SHA512.hexdigest name
       @mode = USER_MODE[:PUBLIC]
       @user = 'anonym'
       @access_time = DateTime.now.strftime('%s')
       @modification_time = DateTime.now.strftime('%s')
       @change_time = DateTime.now.strftime('%s')
       @name = name
+    end
 
-      @@counter += 1
+    def eql?(node)
+      @index == node.index
+    end
+    
+    def ==(node)
+      @index == node.index
     end
   end
 end

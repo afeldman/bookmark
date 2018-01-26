@@ -2,44 +2,42 @@
 
 require 'yaml'
 require 'date'
+require 'gmark/lib/bookmark'
 
 files_json = Dir.glob('./**/*.json')
 files_text = Dir.glob('./**/*.txt')
 files_yaml = Dir.glob('./**/*.yml')
 
-$bookmarks = []
-
-def traverse_(sublist)
-   sublist['children'].each{ |child|
-       traverse(child) if child['type'] == 'folder'
-       $bookmarks << {'title'    => child['name'],
-                     'date'    => child['date_added'],
-                     'url'     => child['url'],
-                     'comment' => '',
-                     'tags'    => [] } if child['type'] == 'url'
-   }if sublist['children']
-end
-
 if $0 == __FILE__
 
-p files_json
-p files_text
-p files_yaml
+  geekmarks = []
+  rejectedmarks = []
+  
+  files_text { |mark_file|
+    
+    marks = Gmark.parse_google(mark_file)
+    
+    geekmarks = (geekmarks + marks[0]).uniq { |elem| elem.url }
+    rejectedmarks = (rejectedmarks + marks[1]).uniq { |elem| elem }
 
-=begin
-   files.each { |file|
-      puts "file:\t#{file}"
-      yaml_f = YAML.load_file(file)
-      root = yaml_f['roots']
-      root.select { | k,v |
-         traverse(v)
-      } if root
-   }
+    geekmarks.each {|elem| puts elem.name}
+  }
+  
+  files_yaml { |mark_file|
+    marks = Gmark.parse_google(mark_file)
+        
+    geekmarks = (geekmarks + marks[0]).uniq { |elem| elem.url }
+    rejectedmarks = (rejectedmarks + marks[1]).uniq { |elem| elem }
+  }
+  
+  files_json.each{ |mark_file|
+    marks = Gmark.parse_google(mark_file)
+    
+    geekmarks = (geekmarks + marks[0]).uniq { |elem| elem.url }
+    rejectedmarks = (rejectedmarks + marks[1]).uniq { |elem| elem }
+  }
 
-   data = $bookmarks.uniq { |elem| elem['url'] }
+  p geekmarks.size
+  p rejectedmarks.size
 
-   puts "size of bookmarks:\t#{data.length}"
-
-   File.open('./bookmark.yml', 'w') {|f| f.write data.to_yaml }
-=end
 end

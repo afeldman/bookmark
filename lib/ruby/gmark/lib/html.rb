@@ -4,6 +4,7 @@ require_relative 'bookmark'
 
 require 'nokogiri'
 require 'open-uri'
+require 'open_uri_redirections'
 require 'date'
 require 'net/http'
 
@@ -49,7 +50,8 @@ module Gmark
     def initialize(url)
       @url = url
       if URL?
-        @doc = Nokogiri::HTML(open(url))
+        @doc = Nokogiri::HTML(open(url,
+                                   :allow_redirections => :safe))
       else
         @doc = nil
       end
@@ -64,18 +66,21 @@ module Gmark
     end
     
     def getTitle
-      @doc.css('title')[0].text.strip if doc?
+      title = @doc.css('title')[0]
+      title.text.strip if doc? and title
+      return title
     end
 
     def getBookmark(parent_tag=nil)
-      Bookmark.new(@url,getTitle,parent_tag) if URL? and doc?
+      title = ''
+      title ||= getTitle
+      Bookmark.new(@url,title,parent_tag) if URL? and doc?
     end
   end
 end
 
 
 if $0 == __FILE__
-  url = 'https://rethinkdb.com/docs/permissions-and-accounts/'
-  html = Gmark::BookmarkHTMLParser.new(url)
+  html = Gmark::BookmarkHTMLParser.new(ARGV[0])
   p html.getBookmark
 end

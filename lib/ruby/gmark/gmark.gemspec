@@ -1,7 +1,7 @@
 # coding: utf-8
 
 
-require 'lib/version'
+require_relative 'lib/version'
 
 Gem::Specification.new do |s|
   s.name         = 'gmark'

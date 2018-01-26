@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'securerandom'
+
 module Gmark
 
   USER_MODE = {
@@ -10,8 +12,9 @@ module Gmark
   class User
     attr_accessor :id, :email
     
-    def initialize(id, email)
-      @id = id
+    def initialize(name, email)
+      @id = SecureRandom.uuid
+      @name = name
       @email = email
     end
     
