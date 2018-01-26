@@ -16,7 +16,7 @@ module Gmark
 
     @@counter = 0
     
-    @uuid = nil
+    @id = nil
     @numer = -1
     @mode = nil
     @user = nil
@@ -26,7 +26,7 @@ module Gmark
     @name = ''
 
     def initialize(name)
-      @uuid = SecureRandom.uuid
+      @id = SecureRandom.uuid
       @number = @@counter
       @mode = USER_MODE[:PUBLIC]
       @user = 'anonym'

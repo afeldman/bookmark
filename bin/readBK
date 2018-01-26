@@ -3,11 +3,13 @@
 require 'yaml'
 require 'date'
 
-files = Dir.glob('./json/*')
+files_json = Dir.glob('./**/*.json')
+files_text = Dir.glob('./**/*.txt')
+files_yaml = Dir.glob('./**/*.yml')
 
 $bookmarks = []
 
-def traverse(sublist)
+def traverse_(sublist)
    sublist['children'].each{ |child|
        traverse(child) if child['type'] == 'folder'
        $bookmarks << {'title'    => child['name'],
@@ -20,6 +22,11 @@ end
 
 if $0 == __FILE__
 
+p files_json
+p files_text
+p files_yaml
+
+=begin
    files.each { |file|
       puts "file:\t#{file}"
       yaml_f = YAML.load_file(file)
@@ -34,4 +41,5 @@ if $0 == __FILE__
    puts "size of bookmarks:\t#{data.length}"
 
    File.open('./bookmark.yml', 'w') {|f| f.write data.to_yaml }
+=end
 end
