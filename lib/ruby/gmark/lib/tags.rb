@@ -4,7 +4,9 @@ require_relative 'node'
 
 module Gmark
   class Tag < Node
-    attr_accessor :parent_tag, :client_tag, :gmark
+    attr_accessor :parent_tag,
+                  :client_tag,
+                  :gmark
     
     @parent_tag = nil
     @client_tag = []
@@ -14,7 +16,14 @@ module Gmark
       super(name)
       @parent_tag = parent_node
     end
-    
+
+    def to_h
+      hash = {}
+      instance_variables.each {|var|
+        hash[var.to_s.delete("@")] = instance_variable_get(var)
+      }
+      hash
+    end
   end
 end
 

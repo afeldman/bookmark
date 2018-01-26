@@ -32,6 +32,10 @@ module Gmark
     def ==(node)
       @index == node.index
     end
+
+    def to_t
+      raise "Not implemented"
+    end
   end
 end
 

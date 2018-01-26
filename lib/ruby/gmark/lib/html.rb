@@ -71,10 +71,11 @@ module Gmark
       return title
     end
 
-    def getBookmark(parent_tag=nil)
+    def getBookmark
       title = ''
       title ||= getTitle
-      Bookmark.new(@url,title,parent_tag) if URL? and doc?
+      mark = Gmark::Bookmark.new(@url,title) if URL? and doc?
+      return mark
     end
   end
 end

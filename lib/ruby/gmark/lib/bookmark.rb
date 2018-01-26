@@ -9,17 +9,25 @@ require 'yaml'
 module Gmark
   class Bookmark < Node
     attr_accessor :url
-    
-    @url = ''
-    
+        
     def initialize(url, name)
       super(name)
       @url = url
-      super.index = Digest::SHA512.hexdigest url  
+      @index = Digest::SHA512.hexdigest url  
     end
+
+    
+    def to_h
+      hash = {}
+      instance_variables.each {|var|
+        hash[var.to_s.delete("@")] = instance_variable_get(var)
+      }
+      hash
+    end
+
   end
 
-  def self.parse_textfiles(textfiles)
+  def self.parse_textfile(textfiles)
     marks = []
     rejected = []
     File.readlines(textfiles).each do |url|
@@ -34,7 +42,7 @@ module Gmark
     return [marks, rejected]
   end
 
-  def self.pars_yaml(yamlfile)
+  def self.parse_yaml(yamlfile)
     yaml_f = YAML.load_file(bookmarkfile)
 
     bookmarks = []
@@ -67,14 +75,16 @@ module Gmark
         if child['type'] == 'url'
 
           begin
-            html = Gmark::BookmarkHTMLParser.new(child['url'].strip)
+            html = BookmarkHTMLParser.new(child['url'].strip)
             mark = html.getBookmark
             
             mark.name = child['name']
             mark.access_time = child['date_added']
 
             bookmark << mark
-          rescue
+          rescue  => e
+            puts e.message
+            puts e.backtrace
             reject << child['url'].strip
           end
         end
@@ -96,19 +106,6 @@ module Gmark
 end
 
 if $0 == __FILE__
-  ymarks = Gmark.parse_textfiles(ARGV[0])
-  ymarks[0].each { |mark|
-    puts mark.name
-  }
-  
-  gmarks = Gmark.parse_google(ARGV[1])
-  gmarks[0].each { |mark|
-    puts mark.name
-  }
-
-  tmarks = Gmark.parse_textfiles(ARGV[2])
-  tmarks[0].each { |mark|
-    puts mark.name
-  }
- 
+  gmarks = Gmark.parse_google(ARGV[0])
+  p gmarks[0].to_yaml 
 end

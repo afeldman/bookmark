@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
+=begin
 gem 'rethinkdb'; require 'rethinkdb'
-
-require_relative 'db'
 
 class GmarkDB_Rethink
   include GmarkDB
@@ -73,3 +72,4 @@ class GmarkDB_Rethink
   end
 
 end
+=end
