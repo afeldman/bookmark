@@ -1,11 +1,9 @@
 #!/usr/bin/env ruby
 
-=begin
-gem 'rethinkdb'; require 'rethinkdb'
+require 'rethinkdb'
 
-class GmarkDB_Rethink
-  include GmarkDB
-  include RethinkDB::Shortcuts
+class Gmark::DB
+  include ::RethinkDB::Shortcuts
   
   def connect(connection)
     begin
@@ -28,7 +26,7 @@ class GmarkDB_Rethink
     info = ''
     begin
       r.db_create('gmark').run { |t| info = t }
-    rescue RethinkDB::ReqlOpFailedError => e
+    rescue ::RethinkDB::ReqlOpFailedError => e
       p e.message if $DEBUG
     end
     info
@@ -39,7 +37,7 @@ class GmarkDB_Rethink
     begin
       r.db('gmark')
         .table_create('tags').run { |t| tag_info = t }
-    rescue RethinkDB::ReqlOpFailedError => e
+    rescue ::RethinkDB::ReqlOpFailedError => e
       p e.message if $DEBUG
     end
     tag_info
@@ -50,7 +48,7 @@ class GmarkDB_Rethink
     begin
       r.db('gmark')
         .table_create('bookmarks').run { |t| mark_info = t}
-    rescue RethinkDB::ReqlOpFailedError => e
+    rescue ::RethinkDB::ReqlOpFailedError => e
       p e.message if $DEBUG
     end
     mark_info
@@ -61,15 +59,14 @@ class GmarkDB_Rethink
     begin
       r.db('gmark')
         .table_create('user').run { |t| user_info=t } 
-    rescue RethinkDB::ReqlOpFailedError => e
+    rescue ::RethinkDB::ReqlOpFailedError => e
       p e.message if $DEBUG
     end
     user_info
   end
   
-  def create_value(value)
+  def insert_bookmark(value)
     r.db('gmark').table('bookmarks').insert(value).run
   end
 
 end
-=end

@@ -13,7 +13,7 @@ module Gmark
     def initialize(url, name)
       super(name)
       @url = url
-      @index = Digest::SHA512.hexdigest url  
+      @index = Digest::SHA512.hexdigest url
     end
 
     
@@ -50,9 +50,8 @@ module Gmark
     
     yaml_f.each { |data|
       begin
-
         url = data['url'].strip
-        
+
         html = Gmark::BookmarkHTMLParser.new(url)
         mark = html.getBookmark
         
@@ -80,7 +79,7 @@ module Gmark
             
             mark.name = child['name']
             mark.access_time = child['date_added']
-
+            
             bookmark << mark
           rescue  => e
             puts e.message
@@ -103,6 +102,7 @@ module Gmark
 
     return [bookmarks, rejected]
   end  
+
 end
 
 if $0 == __FILE__

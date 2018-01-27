@@ -50,8 +50,11 @@ module Gmark
     def initialize(url)
       @url = url
       if URL?
+        puts "[ " + Time.now.to_s + " ]\t ->" +url 
         @doc = Nokogiri::HTML(open(url,
                                    :allow_redirections => :safe))
+
+        puts "[ " + Time.now.to_s + " ]\t <-" + url        
       else
         @doc = nil
       end
