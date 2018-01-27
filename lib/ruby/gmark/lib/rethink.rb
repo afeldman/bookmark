@@ -53,7 +53,18 @@ class Gmark::DB
     end
     mark_info
   end
-  
+
+  def create_rejected
+    mark_info = ''
+    begin
+      r.db('gmark')
+        .table_create('rejected').run { |t| mark_info = t}
+    rescue ::RethinkDB::ReqlOpFailedError => e
+      p e.message if $DEBUG
+    end
+    mark_info
+  end
+
   def create_user
     user_info = ''
     begin
@@ -69,4 +80,8 @@ class Gmark::DB
     r.db('gmark').table('bookmarks').insert(value).run
   end
 
+  def insert_rejected(value)
+    r.db('gmark').table('rejected').insert(value).run
+  end
+  
 end

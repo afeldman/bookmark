@@ -1,5 +1,5 @@
 require_relative 'bookmark'
-require_relative 'rethinkdb'
+require_relative 'rethink'
 
 require_relative 'node'
 require_relative 'bookmark'

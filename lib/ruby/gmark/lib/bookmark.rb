@@ -65,12 +65,12 @@ module Gmark
     }
     return[bookmarks, rejected]
   end
-  
-  def self.parse_google(bookmarkfile)
 
-    traverse = -> (sublist, bookmark, reject) {
+  def self.traverse(sublist, bookmark, reject)
+    
       sublist['children'].each{ |child|
-        traverse(child) if child['type'] == 'folder'
+        traverse(child,bookmark,reject) if child['type'] == 'folder'
+
         if child['type'] == 'url'
 
           begin
@@ -88,8 +88,11 @@ module Gmark
           end
         end
       }if sublist['children']        
-    }
 
+  end
+  
+  def self.parse_google(bookmarkfile)
+   
     bookmarks = []
     rejected = []
     
@@ -97,7 +100,7 @@ module Gmark
     root = yaml_f['roots']
 
     root.select { | k,v |
-         traverse.call(v, bookmarks, rejected)
+         traverse(v, bookmarks, rejected)
     } if root
 
     return [bookmarks, rejected]
