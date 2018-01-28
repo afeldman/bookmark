@@ -27,6 +27,18 @@ module Gmark
 
   end
 
+  def self.fromURL(url)
+    marks = nil
+    rejected = nil
+    begin
+        html = Gmark::BookmarkHTMLParser.new(url.strip)
+        marks = html.getBookmark
+      rescue
+        rejected = url.strip
+    end
+    [marks, rejected]
+  end
+
   def self.parse_textfile(textfiles)
     marks = []
     rejected = []
