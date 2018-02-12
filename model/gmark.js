@@ -8,9 +8,7 @@ module.exports = {
     Tags: tags
 };
 
-
-
-//order by name
+//order tags by name
 exports.tags = function(res, req) {
     Tags.orderBy({index: {name}}).run().then(function(posts) {
         res.json({

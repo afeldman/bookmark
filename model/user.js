@@ -10,7 +10,7 @@ var User = thinky.createModel("User", {
 module.exports = User;
 
 
-
+// /api/v1/tag/...
 // post => create an new user
 // get  => get a user using the name or id
 // delete = delete the user using the id

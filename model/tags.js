@@ -3,7 +3,9 @@ var thinky = require('../util/thinky.js');
 var Tags = thinky.createModel("Tag", {
     id: type.string(), 
     index: type.string(),
-    mode: type.boolean(),
+    mode:  {user: type.Number(),
+	   group: type.Number(),
+	   all: type.Number()},
     user: [type.string()],
     access_time: type.date().default(r.now()),
     modification_time: type.date().default(r.now()),
@@ -16,11 +18,3 @@ var Tags = thinky.createModel("Tag", {
 
 module.exports = Tags;
 
-//order by name
-exports.tags = function(res, req) {
-    Tags.orderBy({index: {name}}).run().then(function(posts) {
-        res.json({
-            posts: posts
-        });
-    }).error(handleError(res));
-}
