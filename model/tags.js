@@ -6,7 +6,7 @@ var Tags = thinky.createModel("Tag", {
     mode:  {user: type.Number(),
 	   group: type.Number(),
 	   all: type.Number()},
-    user: [type.string()],
+    user: type.string(),
     access_time: type.date().default(r.now()),
     modification_time: type.date().default(r.now()),
     change_time: type.date().default(r.now()),
