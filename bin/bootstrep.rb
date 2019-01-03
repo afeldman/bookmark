@@ -162,3 +162,9 @@ youtube.each_value do |value|
   #puts "#{value.time} -> #{time_date}"
   puts "#{time_date.year} #{time_date.month} #{time_date.day}"
 end
+
+require 'shorturl'
+
+youtube.each_value do |value|
+  puts "#{value.url} -> #{ShortURL.shorten(value.url)}"
+end
